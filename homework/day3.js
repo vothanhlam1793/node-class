@@ -153,12 +153,30 @@ function bai_tap_9(){
         * true  - số nguyên tố
         * false - không phải số nguyên tố
 */  
-function bai_tap_10(){
-    var ret = false;
+
+// 8, 2 => 0 | 7, 3 => 1
+function chialaydu(n, m) {
+    var ret = 0;
+    for (var j = 0; j <= n; j = j + m) {
+        ret = n - j;
+    }
+    return ret;
+}
+
+
+function bai_tap_10(n){
+    var ret = true;
     /* 
-        PROCESS
+        PROCESS:
+            i: 1 -> n
+            n / i === 0
     */
-    
+    for(var i = 2; i < n; i++){
+        if(chialaydu(n, i) == 0){
+            ret = false;
+        }
+    }
+
     return ret;
 }
 
@@ -177,3 +195,6 @@ function bai_tap_11(n){
 
 }
 
+
+
+console.log("CHECK: " + bai_tap_10(97));
