@@ -1,2 +1,3 @@
 # LOP NODEJS BINH THANH
 Vo Thanh Lam
+Note: Ghi chu 26/09/2023
