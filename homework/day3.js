@@ -1,4 +1,4 @@
-var support = require("./support");
+var support = require("../lib/support");
 
 // =========================================================
 /*
