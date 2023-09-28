@@ -12,8 +12,7 @@ function add(n, m){
 
 add(5,6);
 
-var arr4 = 
-[  5, 6, 4, 3, 10, 32, 1000]; // 
+var arr4 = [  5, 6, 4, 3, 10, 32, 1000]; // 
 // 0, 1, 2, 3, 4
 // Chieu dai: arr4.length = 5;
 // arr4[0], arr4[4] => arr[index];
@@ -37,4 +36,24 @@ function addArray(arr){
     return ret;
 }
 
-console.log("TONG: " + addArray(arr4));
+function maxArray(arr){
+    var ret = arr[0];
+    for(var i = 1; i < arr.length; i++){
+        if(ret < arr[i]){
+            ret = arr[i];
+        } else {
+            //
+        }
+    }
+    // Voi ret la so lon nhat trong Array
+    return ret;
+}
+
+// ARRAY
+var arr5 = ["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"];
+
+function printArray(arr){
+
+}
+printArray(arr5);
+// hello world
