@@ -53,7 +53,66 @@ function maxArray(arr){
 var arr5 = ["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"];
 
 function printArray(arr){
-
+    var str = "";
+    for(var i = 0; i < arr.length; i++){
+        str = str + arr[i];
+    }
+    console.log(str);
 }
-printArray(arr5);
+// printArray(arr5);
 // hello world
+ 
+var arr6 = ["Võ Thanh Lâm", "40 Bảy Hiền", "0362697197"];
+// Vi tri
+
+// OBJECT
+var hocsinh = {
+    name: "Võ Thanh Lâm", // item -> KEY: VALUE
+    address: "40 Bảy Hiền",
+    phone: "0362697197",
+    email: "vothanhlam1793@gmail.com",
+    arr: ["he", "lo"],
+    obj: {
+        age: 18,
+        arr: [],
+        obj: {
+            obj: {
+                obj: {
+                    arr: [{
+                        obj: {
+                            age: 18
+                        }
+                    }]
+                }
+            }
+        }
+    }
+};
+
+// // OOP
+// var cat = {
+//     name: "My My",
+//     age: 4,
+//     weight: 7
+// }
+
+// var mun = {
+//     attribute: cat,
+//     color: "black"
+// }
+
+// var batu = {
+//     attribute: cat,
+//     color: "white"
+// }
+
+// // console.log(mun.attribute.name);
+
+// // FUNCTION => CHỈ CẤP Ô NHỚ CHO FUNCTION
+// function Animal(){
+//     this.name ="";
+//     this.age = "";
+// }
+
+// var animal = new Animal();
+// console.log(animal.name);
