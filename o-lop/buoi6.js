@@ -2,15 +2,24 @@ var a = 9; // 8, 10, 81
 var b = "Hello World"
 var bol = true; // false
 
+// Mảng => Mảng số
 var arr1 = [1, 2, 3, 4, 5, 6];
+// INDEX
+// arr1.length
+
+// Mảng chuỗi
 var arr2 = ["hello", "hello1", "lam", "vo"];
+
+// Mảng phối hợp
 var arr3 = [1, 2, "hello", "world"];
 
+// 
 function add(n, m){
     return n + m;
 }
 
 add(5,6);
+
 
 var arr4 = [  5, 6, 4, 3, 10, 32, 1000]; // 
 // 0, 1, 2, 3, 4
@@ -27,14 +36,17 @@ var arr4 = [  5, 6, 4, 3, 10, 32, 1000]; //
 
 function addArray(arr){
     var ret = 0;
-
     for(var i = 0; i < arr.length; i = i + 1){
         ret = ret + arr[i];
     }
-
-
     return ret;
 }
+
+// add(3,4);
+// var arr11 = [3,4,5,6,7, 10, 9];
+// console.log("Tong: " + addArray(arr11));
+
+
 
 function maxArray(arr){
     var ret = arr[0];
@@ -116,3 +128,38 @@ var hocsinh = {
 
 // var animal = new Animal();
 // console.log(animal.name);
+
+
+var arr7 = [1,2,3,4];
+var arr8 = [];
+
+arr7[2] = 5;
+// arr8 = [9]
+arr8[0] = 9;
+arr8.push(0);
+arr8.push(10);
+arr8.pop(7);
+
+
+// TYPEOF
+var arr9 = [1,2,"d",3,"b",6,7,8];
+// [1,2,3,6,7,8]
+
+function filterString(arr){
+    var ret = [];
+    var ret2 = [];
+    for(var i = 0; i < arr.length; i++){
+        if(typeof arr[i] == 'number'){
+            ret.push(arr[i]);
+        } else {
+            ret2.push(arr[i]);
+        }
+    }
+    var obj = {
+        ret: ret,
+        ret2: ret2
+    }
+    return obj;
+}
+
+console.log(filterString(arr9))

@@ -14,7 +14,7 @@ function bai_tap_20(arr){
 
 function bai_tap_21(arr){
     // Loc cac so chan trong arr
-    // Vi du: [6,5,3,9,3]
-    // Ket qua: [6]
-    
+    // Vi du: [6,5,3,8,9,3]
+    // Ket qua: [6,8]
+
 }
