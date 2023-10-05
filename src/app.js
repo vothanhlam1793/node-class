@@ -1,10 +1,11 @@
+var count = 0;
+function countup(){
+    var p = document.getElementById('demo');
+    p.innerHTML = Date();
+}
+
 function hello(){
     console.log("Hello World");
-
-    // Selector 
-    document.get
-    var p = document.getElementById('demo');
-
-    p.innerHTML = Date();
-    // document.getElementById('demo').innerHTML = Date();
 }
+
+setInterval(countup, 1000);
