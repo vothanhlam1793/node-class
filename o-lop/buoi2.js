@@ -17,7 +17,15 @@ var b2 = false;
     So + Chuoi => Chuoi
 */ 
 
-// console.log(a + str);//
-console.log(a + 0);
-console.log(a + "0");
+var x1 = 6;
+var x2 = 7;
 
+if(x2 != x1){
+    // TRUE
+    console.log("Dung");
+
+} else {
+    // FALSE
+    console.log("Sai");
+
+}

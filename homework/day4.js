@@ -75,3 +75,43 @@ function bai_tap_15(y){
         console.log(col) // no xuong dong
     }
 }
+
+function bai_tap_16(n){
+    for(var i = 1; i <= n; i ++){
+
+        var str1 = "";
+        for(var j = 0; j < n-i; j++){
+            str1 = str1 + " ";
+        }
+        // str = "   ";
+
+        var str2 = "";
+        for(var k = 0; k < (i * 2 - 1); k++){
+            str2 = str2 + "*";
+        }
+        // str2 = "*"
+
+        console.log(str1 + str2);
+    }
+}
+function bai_tap_17(n){
+    for(var i = 1; i <= n; i ++){
+
+        var str1 = "";
+        for(var j = 0; j < n-i; j++){
+            str1 = str1 + " ";
+        }
+        // str = "   ";
+
+
+        var str2 = "";
+        for(var k = 0; k < i; k++){
+            str2 = str2 + "*";
+        }
+        // str2 = "*"
+
+        console.log(str1 + str2);
+    }
+}
+
+bai_tap_17(5);
