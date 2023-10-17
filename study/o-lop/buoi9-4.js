@@ -1,6 +1,7 @@
 // Source code nguoi ta cung cap
 
 var events = require('events'); // Thu vien
+
 var eventEmitter = new events.EventEmitter();
 
 setInterval(function(){
@@ -30,3 +31,20 @@ eventEmitter.on('onclick', function(){
 eventEmitter.on('onclick', function(){
     console.log("Xin chao 3");
 });
+
+
+
+obj = {
+    name: "",
+    age: "",
+    address: "",
+}
+
+// Co so du lieu co cau truc SQL => Define 
+// mysql -> table (name, age)
+// table -> (name, age, address) => khong chay / loi
+// table_meta -> (idHocsinh, key, value); (idhs, sex, nam);
+// 
+
+// Khong cau truc -> nonSQL
+// mongodb -> document (obj)
