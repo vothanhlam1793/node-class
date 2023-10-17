@@ -22,6 +22,7 @@ eventEmitter.on('hello', helloworld);
 eventEmitter.on('lam', black);
 
 var iX = setInterval(function(){
-    eventEmitter.emit("hello");
+    // eventEmitter.emit("hello");
+    helloworld();
     // eventEmitter.emit("lam");
 }, 200);
