@@ -2,7 +2,9 @@ var count = 0;
 function countup(){
 
     // Selector
-    var p = document.getElementById('demo');
+    var p = document.getElementById('demo'); // => DOM 
+
+
     p.innerHTML = Date();
     console.log(count++);
 }

@@ -5,8 +5,12 @@ var events = require('events'); // Thu vien
 var eventEmitter = new events.EventEmitter();
 
 setInterval(function(){
-    eventEmitter.emit('onclick');
+    eventEmitter.emit('onclick'); // => EMIT
 }, 100);
+
+
+
+
 
 // SOURCE -|
 
@@ -30,6 +34,10 @@ eventEmitter.on('onclick', function(){
 
 eventEmitter.on('onclick', function(){
     console.log("Xin chao 3");
+});
+
+eventEmitter.on("onclick", function(){
+
 });
 
 
