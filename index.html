@@ -14,40 +14,30 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body class="container p-3">
-        <div class="row">
-            <div class="col p-3">   
-                <label>Số 1:</label>
-                <input
-                    class="form-control"
-                    id="inp1"
-                >
-                <label>Số 2:</label>
-                <input
-                    class="form-control"
-                    id="inp2"
-                >
-                <br>
-                <label>KQ: </label>
-                <h3 id="kq">0000</h3>
-            </div>
-            <div class="col p-3">
-                <button
-                    class="btn btn-primary"
-                    onclick="btnPhepToan(1)"
-                >+</button>
-                    <button
-                    class="btn btn-success"
-                    onclick="btnPhepToan(2)"
-                >-</button>
-                <button
-                    class="btn btn-warning"
-                    onclick="btnPhepToan(3)"
-                >x</button>
-                <button
-                    class="btn btn-danger"
-                    onclick="btnPhepToan(4)"
-                >/</button>
-            </div>
+        <div>
+            <label>A: </label>
+            <input
+                id="inpA"
+                placeholder="Nhập A"
+            >
+            <br>
+            <label>B: </label>
+            <input
+                id="inpB"
+                placeholder="Nhập B"
+            >
+            <br>
+            <label>C: </label>
+            <input
+                id="inpC"
+                placeholder="Nhập C"
+            >
+            <br>
+            <button
+                onclick="giaiphuongtrinh()"
+            >Giải</button>
+            <br><br>
+            <h1 id="kq">KQ</h1>
         </div>
 
         <script src="src/app11-1.js"></script>
