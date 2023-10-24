@@ -58,9 +58,16 @@ function giaiphuongtrinh(){
     if(a == 0){
         // PTB1: Bx + C = 0
         if(b == 0){
-            ret = "Phương trình vô nghiệm";
+            // PTB1: C = 0
+            if(c == 0){
+                ret = "Phương trình vô số nghiệm";
+            } else {
+                ret = "Phương trình vô nghiệm"
+            }
         } else {
-            ret = "Phương trình bậc 1 có nghiệm X = " + (-c / b);
+            // PTB1: Bx + C = 0 <=> Bx = -C <=> x = -C/B
+            var x = -c / b;
+            ret = "Phương trình bậc 1 có nghiệm X = " + x;
         }
 
     } else {
