@@ -10,6 +10,7 @@ function changeInput(){
 }
 
 function btnPhepToan(pt){
+    console.log(pt);
     var i1 = document.getElementById('inp1');
     var i2 = document.getElementById('inp2');
 
@@ -36,6 +37,7 @@ function btnPhepToan(pt){
         kq.innerHTML = x / y;
         return;
     }
+    // console.log(ret);
 }
 
 
