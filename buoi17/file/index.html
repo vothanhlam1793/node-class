@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <button>OK</button>
+        <h1 id="data" style="color: yellow;"></h1>
+        <script>
+            var p = document.getElementById("data");
+            var i = 0;
+            setInterval(function(){
+                p.innerHTML = i++;
+            }, 100);
+        </script>
+    </body>
+</html>
