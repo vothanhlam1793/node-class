@@ -1,18 +1,47 @@
 var http = require("http");
 var fs = require("fs");
+var url = require('url');
 
-var server = http.createServer(function(req, res){
+// REP:
+var server = http.createServer(function(request, response){
+    // request => url
+    // console.log("URL: " + request.url);    
 
-    fs.readFile("file/index.html", function(err, data){
+    var q = url.parse(request.url, true);
+
+    console.log(q.pathname);
+
+    fs.readFile("file" + q.pathname, function(err, data){
         if(err){
-            res.end("Đọc fule thất bại rồi");
+            console.log("E: " + err);
+            response.end(err.toString());
         } else {
-            res.end(data.toString());
+            response.end(data.toString());
         }
     });
-    
 });
 
+
+// LISTEN
 server.listen(8000, function(){
-    console.log("Da mo 8000");
+    console.log("Server opening .... 8000");
 });
+
+/*
+    HTTP - PROCESSS
+    B1 - Client  -> (request)
+    B2 - Server (req) -> Processs
+    B3 - Server -> (response):
+        * write("Hello");
+        * end("") => Client xxxx Server
+    
+
+    METHODS:
+    * GET
+    * POST
+    * PUT
+    * PATCH
+    * DELETE
+    
+    URL
+*/
