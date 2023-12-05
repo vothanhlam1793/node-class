@@ -3,7 +3,12 @@
 
     </head>
     <body>
-        <h1>Hello World</h1>
+        <h1>Notepad:</h1>
+        <p><%= data %></p>
+        <form method="POST" action="/luutru">
+            <textarea rows="10" name="data"></textarea>
+            <button type="submit">SAVE</button>
+        </form>
         <script src="/app.js"></script>
         <script src="/app1.js"></script>
     </body>
