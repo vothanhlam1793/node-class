@@ -1,0 +1,67 @@
+h1 {
+    color: aqua;
+    text-align: center;
+    font-size: 80px;
+}
+
+.clocktime {
+    color: aquamarine;
+    text-align: center;
+    font-size: 80px;
+}
+
+.btn {
+    background-color: greenyellow;
+    margin-left: 40%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.btnstop {
+    background-color: red;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 40%;
+
+
+}
+
+.btncontinue {
+    background-color: yellowgreen;
+    font-size: 50px;
+    margin-left: 35%;
+
+
+}
+
+.btnde {
+    background-color: chocolate;
+    font-size: 50px;
+
+}
+
+
+.btntu {
+    background-color: chocolate;
+    font-size: 50px;
+    margin-left: 40%;
+    
+
+}
+
+.hour-cl {
+    width: 120px;
+    font-size: 50px;
+}
+
+span {
+    font-size: 50px;
+}
+.btnput{
+    font-size: 50px;
+    margin-left: 40%;
+}
+h2{
+    text-align: center;
+
+}

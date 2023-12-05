@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/public/css/103.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <a href="index.html">Trang chủ</a>
+    <h1 id="dongho">00:00:00</h1>
+    <script src="/public/js/103.js"></script>
+
+    <audio id="audioElement">
+        <source src="/public/audio/alarm2.mp3" type="audio/mp3">
+    </audio>
+    <h1 id="bamgio" class="clocktime">00:00:00</h1>
+    <h2>
+        <input type="number" id="hour" class="hour-cl"></input>
+        <span>:</span>
+        <input type="number" id="minute" class="hour-cl"></input>
+        <span>:</span>
+        <input type="number" id="sec" class="hour-cl"></input>
+    </h2>
+    <br>
+    <br>
+    <br>
+    <button id="BtnPut" onclick="BtnPut()" class="btnput">Đặt giờ</button>
+    <br>
+    <br>
+    <br>
+    <button id="BtnStart" onclick="startTime()" class="btn">Bắt đầu</button>
+    <button id="BtnDelete" onclick="BtnClear()" class="btnde" hidden="true">Xoá</button>
+
+</body>
+
+</html>
