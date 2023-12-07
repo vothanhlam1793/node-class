@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+            <form method="POST" action="/luutru2">
+                <input name="data">
+                <button type="submit">SAVE</button>
+            </form>
+        </div>
+        <ul>
+            <% for(i in data){ %>
+                <li><%= i %> - <%= data[i] %> <span>(<a href="/xoa?vitri=<%= i %>">x</a>)</span></li>
+            <% } %>
+        </ul>
+    </body>
+</html>
